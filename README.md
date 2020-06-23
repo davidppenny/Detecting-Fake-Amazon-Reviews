@@ -1,11 +1,19 @@
 # 00_Amazon_Reviews_Analysis
 
+<b>Notebooks:<b>
+| Item |Notebook|  Environment  |    
+|------|--------|---------------|
+| 1    |01 Amazon Reviews Analysis - Cleanup, EDA, Modeling | Base |
+| 2    |02 Amazon Reviews Analysis - ML in Tensor Flow | Base + Tensorflow |
+
 <b>Problem Statement:<b>
 - With amazon nearing ½ billion products, users turn to reviews to inform their purchase decisions. The question is how helpful is each review?
+    
 
 <b>Understanding the Problem<b>
 - Yelp has an algorithm that classifies reviews as “recommended” or “not-recommended” and is very effective at maintaining an honest review of each establishment.
 - Amazon removes reviews it deems unauthentic or that violate its Terms of Use. However many “unhelpful” reviews seem to remain. Sellers can also be maliciously attacked when competitors order blatently obvious reviews for another seller, forcing Amazon to automatically shut the seller down.
+    
 
 <b>What is an Unhelpful Review?<b>
 
@@ -19,6 +27,7 @@ Unhelpful reviews can be any combination of the following:
 - Containing toxic or otherwise strong negative sentiment.
 - Falsified or dishonest.
 - Incentivised
+    
     
 <b>Levels of Analysis<b>
     
@@ -42,9 +51,11 @@ Level 2: User Behavior & Product Trust
     
 This creates a exceptionally powerful understanding of not just the trustworthiness of the review, but the trustworthiness of the reviewer.
     
+    
 <b>Goal<b>
 
 - Engineer the correct features in the correct combination to attain the highest possible accuracy at labeling reviews as 'falsified'.
+    
     
 <b>Feature Engineering:<b>
 
@@ -68,6 +79,7 @@ automated_readability_index | Returns the ARI (Automated Readability Index) whic
 overall_readability_index| Based upon all the above tests, returns the estimated school grade level required to understand the text. | 8.0
 total_sentiment | TBD | TBD
 toxic_comment_count | TBD | TBD
+    
 
 <b><center>Table 1: Enginered Features from review_text Column</center><b>
 
@@ -93,6 +105,7 @@ Consider:
 - textstat
 - [Stanford CoreNLP](https://stanfordnlp.github.io/CoreNLP/index.html)
 - Java's JDK
+    
     
 <b>Ackowledgements<b>
 - Dataset sourced from github repository: [Deception-Detection-on-Amazon-reviews-dataset](https://github.com/aayush210789/Deception-Detection-on-Amazon-reviews-dataset)
