@@ -3,8 +3,8 @@
 <b>Notebooks:<b>
 | Item |Notebook|  Environment  |    
 |------|--------|---------------|
-| 1    |01 Amazon Reviews Analysis - Cleanup, EDA, Modeling | Base |
-| 2    |02 Amazon Reviews Analysis - ML in Tensor Flow | Base + Tensorflow |
+| 1    |01 Amazon Reviews Analysis - Cleanup EDA Modeling | Base |
+| 2    |02 Amazon Reviews Analysis - NN in TensorfFlow | Base + Tensorflow |
 
 <b>Problem Statement:<b>
 - With amazon nearing ½ billion products, users turn to reviews to inform their purchase decisions. The question is how helpful is each review?
@@ -22,11 +22,11 @@ Unhelpful reviews can be any combination of the following:
 - Too Long.
 - Too complicated to read.
 - Too simplistic.
-- Overly negative
-- Overly positive
+- Overly negative.
+- Overly positive.
 - Containing toxic or otherwise strong negative sentiment.
 - Falsified or dishonest.
-- Incentivised
+- Incentivised.
     
     
 <b>Levels of Analysis<b>
@@ -81,27 +81,9 @@ total_sentiment | TBD | TBD
 toxic_comment_count | TBD | TBD
     
 
-<b><center>Table 1: Enginered Features from review_text Column</center><b>
-
-#### Personal Notes
-
-Boost Accuracy By:
-- Creating feature total_sentiment_analysis by analyzing the sentiment contained in each scentence - NLP on each scentence and using recurrent neural tensor networks (RNTNs) to determine each scentence sentiment.
-- Creating feature toxic_comments_count (toxic+severe_toxic+obscene+threat+insult+identity_hate) - Kaggle Challenge
-- <mark>Word embeddings <mark>
-
-Consider:
-- Scaling data
-- KNN, Decision Trees, Support Vector Machines
-- PCA
-- Model Evaluation
-- HyperParameter Optimization for each
-- K-Means, GMM, t-SNE clustering
-- Neural Networks - recurrent neural tensor networks (RNTNs)
-   
+<b><center>Table 1: Enginered Features from review_text Column</center><b>  
     
-<b>Packages, programs and libraries Required<b>
-- Sklearn
+<b>Additional Packages, programs and libraries Required<b>
 - textstat
 - [Stanford CoreNLP](https://stanfordnlp.github.io/CoreNLP/index.html)
 - Java's JDK
