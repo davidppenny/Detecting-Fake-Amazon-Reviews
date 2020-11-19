@@ -29,14 +29,11 @@ automated_readability_index | Returns the ARI (Automated Readability Index) whic
 overall_readability_index| Based upon all the above tests, returns the estimated school grade level required to understand the text. | 8.0
 total_sentiment | Returns the overall sentiment of a review. | 13
     
-# Results:
+## Results:
     
 ![Feature Importance Image](/data/feature_importance.png?raw=true)
     
-Essentially we can determine the following from the above image:
-- Reviews having a 'Verified Purchase' label are much less likely to be falsified.
-- Reviews with a smaller Mean Word Length and that read at a lower grade level (lower Flesch-Kincaid Grade) are less likely to be falsified.
-- Reviews that are easier to read, have a higher rating and and a higher overall sentiment are more likely to be falsified.
+From the image obove we can determine that reviews having a 'Verified Purchase' label are much less likely to be falsified. This should be unsuprising. However is doesn't tell us if perhaps the reviewer was paid/compensated to purchase the product and requested to leave an falsified or 'unauthentic' review.
 
 |    Model     |    Accuracy   |   Precision   |     Recall    |    F1-score   | 
 |------------- | ------------- | ------------- | ------------- | ------------- |
@@ -45,8 +42,9 @@ Essentially we can determine the following from the above image:
 |SVM | 81.92%   |   82.31%    |  81.92% | 81.89% |
 |Random Forest Classifier | 81.59%    |  82.60%  |    81.95% | 81.90%
     
-Finally, the table above shows that Logistic Regression was marginally better than a Random Forest Classifier at 82.2%.
+Finally, the table above shows that Logistic Regression was marginally better than a Random Forest Classifier at 82.2% at detecting a falsified review label.
 
+## Additional Information
     
 <b>Additional Packages, programs and libraries Required<b>
 - [Java's JDK](https://www.oracle.com/java/technologies/javase-downloads.html)
