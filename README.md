@@ -31,15 +31,17 @@ total_sentiment | Returns the overall sentiment of a review. | 13
 
     
 <b>Additional Packages, programs and libraries Required<b>
-- textstat
+- [Java's JDK](https://www.oracle.com/java/technologies/javase-downloads.html)
 - [Stanford CoreNLP](https://stanfordnlp.github.io/CoreNLP/index.html)
-- Java's JDK
+- [TextStat](https://pypi.org/project/textstat/)
     
 <b>Notebooks:<b>
 | Item |Notebook|  Environment  |    
 |------|--------|---------------|
-| 1    |01 Amazon Reviews Analysis - Cleanup EDA Modeling | Base |
-| 2    |02 Amazon Reviews Analysis - NN in TensorfFlow | Base + Tensorflow |
+| 1    |01 Amazon Reviews Analysis - Cleanup EDA Modeling | Base Python |
+| 2    |02 Amazon Reviews Analysis - NN in TensorfFlow | Base Python + Tensorflow |
+    
+ See the following [link](https://docs.anaconda.com/anaconda/user-guide/tasks/tensorflow/) for information on how to install tensorflow within an enviroment.
     
     
 <b>Ackowledgements<b>
@@ -48,4 +50,4 @@ total_sentiment | Returns the overall sentiment of a review. | 13
 SMU Data Science Review: Vol. 1 : No. 3 , Article 3.
 Available at: https://scholar.smu.edu/datasciencereview/vol1/iss3/3
 - Hossain, Md Forhad, "Fake Review Detection using Data Mining" (2019). MSU Graduate Theses. 3423.
-https://bearworks.missouristate.edu/theses/3423
+Available athttps://bearworks.missouristate.edu/theses/3423
