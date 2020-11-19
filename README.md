@@ -33,12 +33,12 @@ total_sentiment | Returns the overall sentiment of a review. | 13
     
 ![Feature Importance Image](/data/feature_importance.png?raw=true "Optional Title")
 
-    Model     |    Accuracy   |   Precision   |     Recall    |    F1-score   | 
-------------- | ------------- | ------------- | ------------- | ------------- |
-<mark><b>Logistic Regression<b><mark>| 82.21% | 82.58%  |    82.53%   |   82.19% |
-KNN | 76.13%   |   76.58%   |   76.29% | 76.09%|
-SVM | 81.92%   |   82.31%    |  81.92% | 81.89% |
-Random Forest Classifier | 81.59%    |  82.60%  |    81.95% | 81.90%
+|    Model     |    Accuracy   |   Precision   |     Recall    |    F1-score   | 
+|------------- | ------------- | ------------- | ------------- | ------------- |
+|<mark><b>Logistic Regression<b><mark>| 82.21% | 82.58%  |    82.53%   |   82.19% |
+|KNN | 76.13%   |   76.58%   |   76.29% | 76.09%|
+|SVM | 81.92%   |   82.31%    |  81.92% | 81.89% |
+|Random Forest Classifier | 81.59%    |  82.60%  |    81.95% | 81.90%
 
     
 <b>Additional Packages, programs and libraries Required<b>
