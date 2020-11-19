@@ -5,8 +5,8 @@
     
 <b>Project Goal<b>
 
-- Goal 1: Using various machine learning and NLP techniques I will attempt to determine to what extent which of the following features could assist with determining if a review is falsified.
-- Goal 2: Determine the combination of the following features that results in the highest level of accuracy of detecting falsified reviews.
+- Goal 1: Using various machine learning and NLP techniques I will attempt to determine to what extent which of the features below could assist with determining if a review is falsified.
+- Goal 2: Determine the combination of features below that results in the highest level of accuracy of detecting falsified reviews.
     
 <b>Feature Engineering:<b>
 
@@ -28,6 +28,17 @@ flesch_kincaid_grade | Returns the Flesch-Kincaid Grade of the given text. This 
 automated_readability_index | Returns the ARI (Automated Readability Index) which outputs a number that approximates the grade level needed to comprehend the text. | 6.5
 overall_readability_index| Based upon all the above tests, returns the estimated school grade level required to understand the text. | 8.0
 total_sentiment | Returns the overall sentiment of a review. | 13
+    
+# Results:
+    
+![Feature Importance Image](/data/feature_importance.png?raw=true "Optional Title")
+
+    Model     |    Accuracy   |   Precision   |     Recall    |    F1-score   | 
+------------- | ------------- | ------------- | ------------- | ------------- |
+<mark><b>Logistic Regression<b><mark>| 82.21% | 82.58%  |    82.53%   |   82.19% |
+KNN | 76.13%   |   76.58%   |   76.29% | 76.09%|
+SVM | 81.92%   |   82.31%    |  81.92% | 81.89% |
+Random Forest Classifier | 81.59%    |  82.60%  |    81.95% | 81.90%
 
     
 <b>Additional Packages, programs and libraries Required<b>
@@ -41,8 +52,7 @@ total_sentiment | Returns the overall sentiment of a review. | 13
 | 1    |01 Amazon Reviews Analysis - Cleanup EDA Modeling | Base Python |
 | 2    |02 Amazon Reviews Analysis - NN in TensorfFlow | Base Python + Tensorflow |
     
- See the following [link](https://docs.anaconda.com/anaconda/user-guide/tasks/tensorflow/) for information on how to install tensorflow within an enviroment.
-    
+See the following [link](https://docs.anaconda.com/anaconda/user-guide/tasks/tensorflow/) for information on how to install tensorflow within an enviroment.
     
 <b>Ackowledgements<b>
 - Dataset sourced from github repository: [Deception-Detection-on-Amazon-reviews-dataset](https://github.com/aayush210789/Deception-Detection-on-Amazon-reviews-dataset)
@@ -50,4 +60,4 @@ total_sentiment | Returns the overall sentiment of a review. | 13
 SMU Data Science Review: Vol. 1 : No. 3 , Article 3.
 Available at: https://scholar.smu.edu/datasciencereview/vol1/iss3/3
 - Hossain, Md Forhad, "Fake Review Detection using Data Mining" (2019). MSU Graduate Theses. 3423.
-Available athttps://bearworks.missouristate.edu/theses/3423
+Available at: https://bearworks.missouristate.edu/theses/3423
