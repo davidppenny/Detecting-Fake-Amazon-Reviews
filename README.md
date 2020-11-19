@@ -1,61 +1,11 @@
 # 00_Amazon_Reviews_Analysis
 
-<b>Notebooks:<b>
-| Item |Notebook|  Environment  |    
-|------|--------|---------------|
-| 1    |01 Amazon Reviews Analysis - Cleanup EDA Modeling | Base |
-| 2    |02 Amazon Reviews Analysis - NN in TensorfFlow | Base + Tensorflow |
-
 <b>Problem Statement:<b>
-- With amazon nearing ½ billion products, users turn to reviews to inform their purchase decisions. The question is how helpful is each review?
+- With amazon nearing ½ billion products, users turn to reviews to inform their purchase decisions. However, is each review authentic? If you have spent any time on the internet these days, you may know by now that not everything is true. In fact according to [Greg Sterling in an atricle for Marketing Land](https://marketingland.com/study-finds-61-percent-of-electronics-reviews-on-amazon-are-fake-254055#:~:text=Study%20finds%2061%20percent%20of%20electronics%20reviews%20on%20Amazon%20are%20'fake',-The%20problem%20appears), <b>up to 61% of reviews on Amazon are fake!<b> 
     
+<b>Project Goal<b>
 
-<b>Understanding the Problem<b>
-- Yelp has an algorithm that classifies reviews as “recommended” or “not-recommended” and is very effective at maintaining an honest review of each establishment.
-- Amazon removes reviews it deems unauthentic or that violate its Terms of Use. However many “unhelpful” reviews seem to remain. Sellers can also be maliciously attacked when competitors order blatently obvious reviews for another seller, forcing Amazon to automatically shut the seller down.
-    
-
-<b>What is an Unhelpful Review?<b>
-
-Unhelpful reviews can be any combination of the following:
-- Too Short.
-- Too Long.
-- Too complicated to read.
-- Too simplistic.
-- Overly negative.
-- Overly positive.
-- Containing toxic or otherwise strong negative sentiment.
-- Falsified or dishonest.
-- Incentivised.
-    
-    
-<b>Levels of Analysis<b>
-    
-While there are many avenues to tackle this problem and different levels of analysis possible. This project will only focus on the first level and if more time exists, pursue the second level.
-    
-Level 1: Feature Engineering
-- Engineer features seen in Table 1 below. Train and test a variety of models to attempt to reach the highest accuracy.
-    
-Level 2: User Behavior & Product Trust
-- www.ReviewMeta.com does this exceptionally well. They scrape each product, its reviews and the metadata from each of the users profile pages, and then determine the following:
-    
-    - Check for deleted reviews  (Has the product lost reviews over time?)
-    - Reviewer ease (Does the reviewer always give '5-star' reviews?)
-    - Rating trend (How has the review rating changed over time?)
-    - Unverified purchases (Is the customer verified for purchasing the product?)
-    - Word count comparison (How do the word counts compare review to review?)
-    - Phrase repetition (Are the reviews similar in any way?)
-    - Suspicious reviewers (one-hit wonders, never-verified reviewers, single-day reviewers)
-    - Overlapping review history (Has the same customer reviewed the same product?)
-    - Brand repeats (Do the same customers review all the same products?)
-    
-This creates a exceptionally powerful understanding of not just the trustworthiness of the review, but the trustworthiness of the reviewer.
-    
-    
-<b>Goal<b>
-
-- Engineer the correct features in the correct combination to attain the highest possible accuracy at labeling reviews as 'falsified'.
-    
+- Goal 1: Using various machine learning and NLP techniques I will attempt to determine to what extent which of the following features could assist with determining if a review is falsified.
     
 <b>Feature Engineering:<b>
 
@@ -87,6 +37,12 @@ toxic_comment_count | TBD | TBD
 - textstat
 - [Stanford CoreNLP](https://stanfordnlp.github.io/CoreNLP/index.html)
 - Java's JDK
+    
+<b>Notebooks:<b>
+| Item |Notebook|  Environment  |    
+|------|--------|---------------|
+| 1    |01 Amazon Reviews Analysis - Cleanup EDA Modeling | Base |
+| 2    |02 Amazon Reviews Analysis - NN in TensorfFlow | Base + Tensorflow |
     
     
 <b>Ackowledgements<b>
