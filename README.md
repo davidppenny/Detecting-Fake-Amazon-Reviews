@@ -1,17 +1,17 @@
-# 00_Amazon_Reviews_Analysis
+# Detecting Falsified Reviews
 
 <b>Problem Statement:<b>
-- With amazon nearing ½ billion products, users turn to reviews to inform their purchase decisions. However, is each review authentic? If you have spent any time on the internet these days, you may know by now that not everything is true. In fact according to [Greg Sterling in an atricle for Marketing Land](https://marketingland.com/study-finds-61-percent-of-electronics-reviews-on-amazon-are-fake-254055#:~:text=Study%20finds%2061%20percent%20of%20electronics%20reviews%20on%20Amazon%20are%20'fake',-The%20problem%20appears), <b>up to 61% of reviews on Amazon are fake!<b> 
+- Users turn to reviews to inform their purchase decisions. However, is each review authentic? If you have spent any time on the internet these days, you may know by now that not everything is true. In fact according to [Greg Sterling in an atricle for Marketing Land](https://marketingland.com/study-finds-61-percent-of-electronics-reviews-on-amazon-are-fake-254055#:~:text=Study%20finds%2061%20percent%20of%20electronics%20reviews%20on%20Amazon%20are%20'fake',-The%20problem%20appears), <b>up to 61% of reviews on Amazon are fake!<b> 
     
 <b>Project Goal<b>
 
 - Goal 1: Using various machine learning and NLP techniques I will attempt to determine to what extent which of the following features could assist with determining if a review is falsified.
+- Goal 2: Determine the combination of the following features that results in the highest level of accuracy of detecting falsified reviews.
     
 <b>Feature Engineering:<b>
 
-Features to Add | Description | Example
+   Feature    | Description   | Sample Data
 ------------- | ------------- | -------------
-falsified | The label indicating if the review was falsified or not | 1
 rating | The star rating the customer rated the product from 1-5 | 3
 verified_purchase | Returns wether or not the customer purchased the product. | 1
 sentiment | Returns the overall sentiment of the review. | 0
@@ -27,11 +27,8 @@ flesch_ease| Returns the Flesch Reading Ease Score. | 98.11
 flesch_kincaid_grade | Returns the Flesch-Kincaid Grade of the given text. This is a grade formula in that a score of 9.3 means that a ninth grader would be able to read the document. | 9.3
 automated_readability_index | Returns the ARI (Automated Readability Index) which outputs a number that approximates the grade level needed to comprehend the text. | 6.5
 overall_readability_index| Based upon all the above tests, returns the estimated school grade level required to understand the text. | 8.0
-total_sentiment | TBD | TBD
-toxic_comment_count | TBD | TBD
-    
+total_sentiment | Returns the overall sentiment of a review. | 13
 
-<b><center>Table 1: Enginered Features from review_text Column</center><b>  
     
 <b>Additional Packages, programs and libraries Required<b>
 - textstat
