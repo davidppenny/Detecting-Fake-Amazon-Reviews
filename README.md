@@ -1,7 +1,7 @@
 # Detecting Falsified Reviews
 
 <b>Problem Statement:<b>
-- Users turn to reviews to inform their purchase decisions. However, is each review authentic? If you have spent any time on the internet these days, you may know by now that not everything is true. In fact according to [Greg Sterling in an atricle for Marketing Land](https://marketingland.com/study-finds-61-percent-of-electronics-reviews-on-amazon-are-fake-254055#:~:text=Study%20finds%2061%20percent%20of%20electronics%20reviews%20on%20Amazon%20are%20'fake',-The%20problem%20appears), <b>up to 61% of reviews on Amazon are fake!<b> 
+- Users turn to reviews to inform their purchase decisions. However, is each review authentic? If you have spent any time on the internet these days, you may know by now that not everything is true. In fact, according to [Greg Sterling in an atricle for Marketing Land](https://marketingland.com/study-finds-61-percent-of-electronics-reviews-on-amazon-are-fake-254055#:~:text=Study%20finds%2061%20percent%20of%20electronics%20reviews%20on%20Amazon%20are%20'fake',-The%20problem%20appears), <b>up to 61% of reviews on Amazon are fake!<b> 
     
 <b>Project Goal<b>
 
@@ -31,7 +31,12 @@ total_sentiment | Returns the overall sentiment of a review. | 13
     
 # Results:
     
-![Feature Importance Image](/data/feature_importance.png?raw=true "Optional Title")
+![Feature Importance Image](/data/feature_importance.png?raw=true)
+    
+Essentially we can determine the following from the above image:
+- Reviews having a 'Verified Purchase' label are much less likely to be falsified.
+- Reviews with a smaller Mean Word Length and that read at a lower grade level (lower Flesch-Kincaid Grade) are less likely to be falsified.
+- Reviews that are easier to read, have a higher rating and and a higher overall sentiment are more likely to be falsified.
 
 |    Model     |    Accuracy   |   Precision   |     Recall    |    F1-score   | 
 |------------- | ------------- | ------------- | ------------- | ------------- |
@@ -39,6 +44,8 @@ total_sentiment | Returns the overall sentiment of a review. | 13
 |KNN | 76.13%   |   76.58%   |   76.29% | 76.09%|
 |SVM | 81.92%   |   82.31%    |  81.92% | 81.89% |
 |Random Forest Classifier | 81.59%    |  82.60%  |    81.95% | 81.90%
+    
+Finally, the table above shows that Logistic Regression was marginally better than a Random Forest Classifier at 82.2%.
 
     
 <b>Additional Packages, programs and libraries Required<b>
