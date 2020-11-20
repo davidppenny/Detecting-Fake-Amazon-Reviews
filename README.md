@@ -31,7 +31,7 @@ flesch_ease| Returns the Flesch Reading Ease Score. | 98.11
 flesch_kincaid_grade | Returns the Flesch-Kincaid Grade of the given text. This is a grading formula in that a score of 9.3 means that a ninth-grader would be able to read the document. | 9.3
 automated_readability_index | Returns the ARI (Automated Readability Index) which outputs a number that approximates the grade level needed to comprehend the text. | 6.5
 overall_readability_index| Based upon all the above tests, returns the estimated school grade level required to understand the text. | 8.0
-total_sentiment | Returns the overall sentiment of a review. | 13
+total_sentiment | Returns the overall sentiment of a multi-sentence review. | 13
     
 ## Results:
     
