@@ -46,9 +46,10 @@ From the image above we can determine that reviews having a 'Verified Purchase' 
 |SVM | 81.92%   |   82.31%    |  81.92% | 81.89% |
 |Random Forest Classifier | 81.59%    |  82.60%  |    81.95% | 81.90%
     
-Finally, the table above shows that Logistic Regression was marginally better than a Random Forest Classifier at 82.2% at detecting a falsified review label.
+Finally, after testing various models, the table above shows that Logistic Regression was returned the best accuracy at predicting falsified reviews.
     
-Further work is needed to determine if a smaller or higher mean word length leads to a review being falsified.
+## Next Steps
+- Further work is needed to determine if higher or lower values within the engineered features results in higher or lower feature importance. For instance, setting a cut-off point for mean_word_len and classifying everything above it as "larger_mean_word_len" would create a new feature that could be used to detect falsified reviews. It would be interesting to see how this affects feature importance. 
 
 ## Additional Information
     
